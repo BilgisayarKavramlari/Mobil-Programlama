@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.turkapp.kt.villademo.ProductList">
+
+    <android.support.v7.widget.Toolbar
+        android:background="#FFF"
+        android:id="@+id/productlist_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="İçecekler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" />
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/shoppingcart_black" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/tv_sepetAdet"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/corners"
+                android:layout_width="25dp"
+                android:layout_height="20dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:background="#ececec"
+        android:layout_below="@+id/productlist_toolbar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_weight="5"
+            android:id="@+id/activity_product_list"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <Button
+                android:id="@+id/buttonSiparis"
+                android:visibility="invisible"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Sipariş Ver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

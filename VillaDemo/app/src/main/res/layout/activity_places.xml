@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_places"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.turkapp.kt.villademo.Places">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/koprulukanyon"
+        android:id="@+id/imageViewPlaces"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabGmap"
+        android:scaleType="center"
+        android:src="@android:drawable/ic_menu_compass"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-25dp"
+        android:layout_below="@id/imageViewPlaces"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_below="@id/imageViewPlaces"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Köprülü Kanyon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="@string/koprulu_kanyon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:layout_below="@id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
