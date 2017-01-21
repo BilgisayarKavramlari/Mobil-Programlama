@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:background="#000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.turkapp.kt.villademo.Odalar">
+
+    <com.turkapp.kt.villademo.ViewPagerFixed
+        android:layout_weight="5"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <HorizontalScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:alpha="1"
+                    android:id="@+id/odalar_Mutfak"
+                    android:onClick="odalarClick"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mutfak"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent" />
+
+                <RelativeLayout
+                    android:background="@drawable/yazibg"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp">
+
+                    <TextView
+                        android:text="MUTFAK"
+                        android:textColor="#FFF"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:alpha="0.4"
+                    android:id="@+id/odalar_Salon"
+                    android:onClick="odalarClick"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/salon"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent" />
+
+                <RelativeLayout
+                    android:background="@drawable/yazibg"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp">
+
+                    <TextView
+                        android:text="SALON"
+                        android:textColor="#FFF"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:alpha="0.4"
+                    android:id="@+id/odalar_YatakOdasi"
+                    android:onClick="odalarClick"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/bedroom"
+                    android:scaleType="centerCrop"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent" />
+
+                <RelativeLayout
+                    android:background="@drawable/yazibg"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp">
+
+                    <TextView
+                        android:text="YATAK ODASI"
+                        android:textColor="#FFF"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:alpha="0.4"
+                    android:id="@+id/odalar_Bahce"
+                    android:onClick="odalarClick"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/bahce"
+                    android:scaleType="centerCrop"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent" />
+                <RelativeLayout
+                    android:background="@drawable/yazibg"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp">
+
+                    <TextView
+                        android:text="BAHÇE"
+                        android:textColor="#FFF"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:alpha="0.4"
+                    android:id="@+id/odalar_Banyo"
+                    android:onClick="odalarClick"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/banyo"
+                    android:scaleType="centerCrop"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent" />
+                <RelativeLayout
+                    android:background="@drawable/yazibg"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp">
+
+                    <TextView
+                        android:text="BANYO"
+                        android:textColor="#FFF"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

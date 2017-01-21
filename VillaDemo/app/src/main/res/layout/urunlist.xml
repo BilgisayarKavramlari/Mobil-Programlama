@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/container"
+        android:padding="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_viewlist"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            card_view:cardBackgroundColor="#FFF"
+            card_view:cardCornerRadius="0dp">
+            <LinearLayout
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3">
+                    <ImageView
+                        android:contentDescription="@string/imageviews_desc"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:id="@+id/simgeliste"
+                        android:layout_width="@dimen/_48sdp"
+                        android:layout_height="@dimen/_48sdp"
+                        android:scaleType="centerInside"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/simgeliste"
+                        android:layout_toEndOf="@+id/simgeliste"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/relativeLayout">
+                        <TextView
+                            android:id="@+id/urunadi_liste"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold"
+                            android:textColor="#3e3e3e"
+                            android:text="Urun Adı" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_sepet"
+                    android:background="#ececec"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5">
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/tvortala"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp" />
+
+                    <ImageView
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/shopping_cart"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/tvortala"
+                        android:id="@+id/imageView_sepeteekle" />
+
+                    <NumberPicker
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/tvortala"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/numberPicker" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">VillaDemo</string>
+    <string name="title_activity_odalar">Odalar</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_deneme">Deneme</string>
+    <string name="title_activity_market_kategori">MarketKategori</string>
+    <string name="imageviews_desc"></string>
+
+    <array name="urunler">
+        <item>CocaCola</item>
+        <item>Fanta</item>
+        <item>Sprite</item>
+        <item>İceTea</item>
+    </array>
+
+    <integer-array name="urunler_res">
+        <item>@drawable/cocacola</item>
+        <item>@drawable/fanta</item>
+        <item>@drawable/sprite</item>
+        <item>@drawable/icetea</item>
+    </integer-array>
+
+    <string name="koprulu_kanyon">
+        \t Köprülü Kanyon, Isparta nın Sütçüler ilçesinde başlayan ve Antalya da denize dökülen, rafting yapmaya uygun bir Köprüçay vadisi.
+
+Rafting yapılabilen bölgenin başlangıcında iki adet de tarihi köprü bulunmaktadir, küçüğü asıl usta tarafından, kemerli büyük köprü ise ustanın kalfası tarafından inşa edilmiştir. Köprülü Kanyon ismini de bu köprülerden almıştır.
+
+Yaz aylarında günde 7 bin kişiye rafting imkânı sağlayan bu temiz nehrin suyu da kaynağından rahatlıkla içilebilir. Çevrenin tabii güzelliği iyi bir sayfiye yeri olmasında önemli rol oynamaktadır. Bu nedenle kanyon aynı zamanda turistik bir yerdir.
+    </string>
+
+
+</resources>
